@@ -187,16 +187,6 @@ var BEHOLD_FEED = '';
     img.width = 640; img.height = 640;
     img.alt = text ? 'Instagraminlägg från PhanterBygg: ' + text.slice(0, 80) : 'Instagraminlägg från PhanterBygg';
     a.appendChild(img);
-    if (p.mediaType === 'VIDEO') {
-      var v = document.createElement('span');
-      v.className = 'insta-tag'; v.textContent = 'Film';
-      a.appendChild(v);
-    }
-    if (text) {
-      var c = document.createElement('span');
-      c.className = 'insta-caption'; c.textContent = text;
-      a.appendChild(c);
-    }
     li.appendChild(a);
     return li;
   }
